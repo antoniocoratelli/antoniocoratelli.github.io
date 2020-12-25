@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="{{content:title}}">
+    <meta name="description" content="{{content:title}}">
+    <meta name="keywords" content="{{content:title}}">
+
+    <title>{{content:title}}</title>
+    
+    <base href="{{content:url}}">
+    <link rel="canonical" href="{{content:url}}">
+
+    <style>{{text:google-fonts.css}}</style>
+    <style>{{text:fontello.css}}</style>
+    <style>{{text:normalize.css}}</style>
+    <style media="screen">{{text:custom.css}}</style>
+    
+    <link rel="icon" href="data:image/png;base64,{{base64:favicon-32.png}}" sizes="32x32">
+    <link rel="icon" href="data:image/png;base64,{{base64:favicon-16.png}}" sizes="16x16">
+  </head>
+  
+  <body class="colorscheme-light">
+    <main class="wrapper">
+      <nav class="navigation">
+        <section class="container">
+          <a class="navigation-title" href="{{content:url}}">{{content:host}}</a>
+          <input type="checkbox" id="menu-toggle" />
+          <label class="menu-button float-right" for="menu-toggle"><i class="icon-menu"></i></label>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link" href="{{content:linkedin}}" target="_blank">LinkedIn</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link" href="{{content:github}}" target="_blank">GitHub</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+      <div class="content">
+              
+        <section class="container centered">
+          <div class="about">
+            
+            <div class="avatar">
+              <img src="data:image/jpeg;base64,{{base64:avatar.min.jpg}}" alt="avatar"/>
+            </div>
+            
+            <h1>Antonio Coratelli</h1>
+            <h2>R&amp;D Software Engineer</h2>
+            <ul>
+              <li>
+                <a href="{{content:github}}" target="_blank" aria-label="GitHub">
+                  <i class="icon-github-circled" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="{{content:linkedin}}" target="_blank" aria-label="LinkedIn">
+                  <i class="icon-linkedin-squared" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" onclick="document.getElementById('formbutton-button').click();" aria-label="Contact">
+                  <i class="icon-mail" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+      <footer class="footer">
+        <section class="container">
+          <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+          <script>
+            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+            formbutton("create", {action: "https://formspree.io/f/xeqppeyp"})
+          </script>
+        </section>
+      </footer>
+    </main>
+
+  </body>
+</html>
