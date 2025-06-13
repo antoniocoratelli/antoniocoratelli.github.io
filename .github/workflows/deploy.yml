@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: unzip artifact.zip
+      - run: if [ -f artifact.zip ]; then unzip artifact.zip; fi
       - run: 7z x -p"${{ secrets.ACO_GH_PAGES }}" archive.7z
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
